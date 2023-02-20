@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerPickLine">
+   <Button layoutX="902.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: #424242;" text="Button" textFill="TRANSPARENT" />
+    <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="30.0" layoutY="25.0" onAction="#backButtonPressed" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: linear-gradient(to bottom, #636e75, #5f686f, #5c6268, #585d62, #54575b); -fx-background-radius: 30; -fx-text-fill: #DCDCDD;" text="&lt;" />
+    <JFXComboBox fx:id="line" focusColor="#eb9a1700" layoutX="263.0" layoutY="249.0" prefHeight="42.0" prefWidth="430.0" style="-fx-background-color: #636e75; -fx-background-radius: 30;" unFocusColor="#4d4d4d00" />
+    <Label alignment="CENTER" layoutX="398.0" layoutY="214.0" prefHeight="18.0" prefWidth="157.0" text="Wybór numeru linii:" textFill="#d9d9d9" />
+    <Label alignment="CENTER" layoutX="329.0" layoutY="49.0" prefHeight="35.0" prefWidth="302.0" text="Wybór linii autobusowej" textFill="#d9d9d9">
+        <font>
+          <Font size="24.0" />
+        </font>
+    </Label>
+    <JFXButton fx:id="accept" buttonType="RAISED" layoutX="400.0" layoutY="388.0" onAction="#acceptButtonPressed" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: linear-gradient(to bottom, #636e75, #5f686f, #5c6268, #585d62, #54575b); -fx-background-radius: 30; -fx-text-fill: #DCDCDD;" text="POTWIERDŹ" />
+   <Label fx:id="info" alignment="CENTER" layoutX="382.0" layoutY="363.0" prefHeight="18.0" prefWidth="190.0" text="Wprowadź dane, aby kontynuować" textFill="#d9d9d9" visible="false" />
+</AnchorPane>

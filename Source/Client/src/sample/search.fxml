@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSearch">
+   <Button layoutX="908.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: #424242;" text="Button" textFill="TRANSPARENT" />
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="73.0" prefWidth="960.0" style="-fx-text-fill: #DCDCDD;" text="Wyszukiwanie autobusu" AnchorPane.bottomAnchor="442.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="30.0" layoutY="25.0" onAction="#backButtonPressed" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: linear-gradient(to bottom, #636e75, #5f686f, #5c6268, #585d62, #54575b); -fx-background-radius: 30; -fx-text-fill: #DCDCDD;" text="&lt;" />
+   <JFXComboBox fx:id="startBusStop" focusColor="#eb9d1700" layoutX="264.0" layoutY="142.0" prefHeight="42.0" prefWidth="430.0" style="-fx-background-color: #636e75; -fx-background-radius: 30;" unFocusColor="#69696900" />
+   <JFXComboBox fx:id="destBusStop" focusColor="#eb9d1700" layoutX="264.0" layoutY="236.0" prefHeight="42.0" prefWidth="430.0" style="-fx-background-color: #636e75; -fx-background-radius: 30;" unFocusColor="#6b6b6b00" />
+   <JFXComboBox fx:id="time" editable="true" focusColor="#eb9d1700" layoutX="264.0" layoutY="330.0" prefHeight="42.0" prefWidth="430.0" style="-fx-background-color: #636e75; -fx-background-radius: 30;" unFocusColor="#6b6b6b00" />
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="114.0" prefHeight="35.0" prefWidth="317.0" text="Wybór przystanku początkowego:" textFill="#d9d9d9" />
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="200.0" prefHeight="35.0" prefWidth="317.0" text="Wybór przystanku docelowego:" textFill="#d9d9d9" />
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="294.0" prefHeight="35.0" prefWidth="317.0" text="Wybór godziny odjazdu z przystanku początkowego:" textFill="#d9d9d9" />
+   <JFXButton fx:id="searchButton" buttonType="RAISED" layoutX="402.0" layoutY="419.0" onAction="#searchButtonPressed" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: linear-gradient(to bottom, #636e75, #5f686f, #5c6268, #585d62, #54575b); -fx-background-radius: 30; -fx-text-fill: #DCDCDD;" text="WYSZUKAJ" />
+   <Label fx:id="info" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="380.0" prefHeight="35.0" prefWidth="960.0" style="-fx-text-fill: #DCDCDD;" text="Wprowadź wszystkie dane" visible="false">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+</AnchorPane>

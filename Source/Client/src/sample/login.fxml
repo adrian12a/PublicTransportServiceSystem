@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <Button layoutX="248.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: #424242;" text="Button" textFill="TRANSPARENT" />
+   <Label alignment="CENTER" layoutX="-1.0" layoutY="71.0" prefHeight="18.0" prefWidth="300.0" text="Wprowadź dane" textAlignment="CENTER" textFill="#dbdbdb80" />
+   <TextField fx:id="login" layoutX="52.0" layoutY="103.0" prefHeight="40.0" prefWidth="196.0" promptText="Login" style="-fx-background-radius: 20; -fx-background-color: #636e75;" />
+   <PasswordField fx:id="password" layoutX="52.0" layoutY="168.0" prefHeight="40.0" prefWidth="196.0" promptText="Hasło" style="-fx-background-radius: 20; -fx-background-color: #636e75;" />
+   <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="52.0" layoutY="233.0" onAction="#loginButtonPressed" prefHeight="41.0" prefWidth="196.0" style="-fx-text-fill: #DCDCDD; -fx-background-color: linear-gradient(to bottom, #636e75, #5f686f, #5c6268, #585d62, #54575b); -fx-background-radius: 30;" text="ZALOGUJ" />
+   <Label fx:id="loginInfo" alignment="CENTER" layoutX="-1.0" layoutY="309.0" prefHeight="18.0" prefWidth="300.0" textAlignment="CENTER" textFill="#dcdcdd" />
+   <Button fx:id="registerButton" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#registerButtonPressed" style="-fx-text-fill: #DCDCDD; -fx-background-color: #424242;" text="Zarejestruj się" />
+   <Button fx:id="loginGuestButton" layoutX="176.0" layoutY="360.0" mnemonicParsing="false" onAction="#loginGuestButtonPressed" style="-fx-text-fill: #DCDCDD; -fx-background-color: #424242;" text="Zaloguj jako gość" />
+</AnchorPane>
